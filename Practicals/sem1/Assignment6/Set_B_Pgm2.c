@@ -1,0 +1,17 @@
+#include"poly.h"
+#include<stdio.h>
+int main()
+{
+    poly *head1=(poly*)malloc(sizeof(poly));
+    poly *head2=(poly*)malloc(sizeof(poly));
+    poly *head3=(poly*)malloc(sizeof(poly));
+    poly *head4=(poly*)malloc(sizeof(poly));
+    poly *head5=(poly*)malloc(sizeof(poly));
+    
+    create(head1);
+    create(head2);
+    printf("Adding the list\n");
+    multiply(head1,head2,head3,head4);
+    add(head3,head4,head5);
+    display(head5);
+}
